@@ -5,8 +5,8 @@ def palindromo():
     palavra = input("Digite uma palavra: ")
     inverso = palavra[::-1]
     if palavra == inverso:
-        return "A palavra é um palíndromo."
+        return "A palavra digitada é um palíndromo."
     else:
-        return "A palavra não é um palíndromo."
-    
+        return "A palavra digitada não é um palíndromo."
+      
 print(palindromo())

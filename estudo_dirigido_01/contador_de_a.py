@@ -3,4 +3,4 @@
 def contador_a():
     texto = input('Digite um texto: ')
     return texto.count('a')
-print(contador_a())
+print(f"O texto contém a letra 'a' {contador_a()} vezes.")

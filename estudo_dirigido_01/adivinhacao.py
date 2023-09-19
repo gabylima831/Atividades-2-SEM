@@ -3,16 +3,23 @@
 # Se o usuário digitar um número válido, verifique se o número que o usuário digitou é igual ao número gerado aleatoriamente pelo programa. 
 # Se o número for igual, imprima "Você acertou!". Caso contrário, imprima "Você errou!".
 
-import random
-numero_adivinhado = random.randint (1,10)
+# Extra: Conte quantas tentativas o usuário precisou para acertar o número. Permita tentativas até o usuário acertar o número.
 
-acerto = False
-palpites = 0
-while acerto == False:
-  palpite_usuario = int(input('Digite um número (entre 1 e 10): '))  
-  if palpites == numero_adivinhado:
-    acerto = True
-    print('Você acertou!')
-  else: 
-    palpites += 1
-    print('Você errou!')     
+import random as rd
+
+def jogo_de_advinhacao(numero):
+    numero_de_tentativas = 1
+    numero_sorteado = rd.randint(1, 11)
+    while numero < 1 or numero > 10:
+        print("Número inválido.")
+        numero = int(input("Digite um número inteiro entre 1 e 10: "))
+    else:
+        print("Número válido.")
+    while numero != numero_sorteado:
+        numero_de_tentativas += 1
+        print("Você errou!")
+        numero = int(input("Digite um número inteiro entre 1 e 10: "))
+    print(f"Você acertou! O número sorteado foi {numero_sorteado}. Você precisou de {numero_de_tentativas} tentativas para acertar o número.")
+
+numero = int(input("Digite um número inteiro entre 1 e 10: "))
+jogo_de_advinhacao(numero) 
