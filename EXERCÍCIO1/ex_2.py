@@ -1,11 +1,11 @@
 class Restaurante:
     def __init__(self):
         self.itens_menu = {
-            "hamburger": 5.50,
-            "batata frita": 2.00,
-            "refrigerante": 1.50,
-            "pizza": 8.00,
-            "salada": 3.50
+            "Hamburger": 5.50,
+            "Batata frita": 2.00,
+            "Refrigerante": 1.50,
+            "Pizza": 8.00,
+            "Salada": 3.50
         }
         self.pedidos = {}
         self.numero_pedido = 1
@@ -13,7 +13,7 @@ class Restaurante:
     def adicionar_pedido(self):
         pedido = {}
         while True:
-            item = input("Digite o nome do item (ou 'sair' para encerrar o pedido): ").lower()
+            item = input("Digite o nome do item do menu (ou 'Sair' para encerrar o pedido): ").lower()
             if item == 'sair':
                 break
             if item in self.itens_menu:
@@ -63,7 +63,7 @@ while True:
     print("\nOpções:")
     print("1. Adicionar novo pedido")
     print("2. Adicionar item a pedido existente")
-    print("3. Calcular total de um pedido")
+    print("3. Calcular total de um pedido;")
     print("4. Visualizar todos os pedidos")
     print("5. Sair")
     escolha = input("Escolha uma opção: ")
