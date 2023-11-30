@@ -31,9 +31,9 @@ class Plataforma:
         total_de_jogos = len(self.lista_de_jogos)
         return f"Total de Jogos na Plataforma: {total_de_jogos}"
 
-jogo1 = Jogo("Pôquer", "Cartas", 10.0, 1)
-jogo2 = Jogo("Caça-Níqueis", "Máquinas", 5.0, 2)
-jogo3 = Jogo("Roleta", "Mesa", 15.0, 3)
+jogo1 = Jogo("Truco", "Cartas", 15.0, 2)
+jogo2 = Jogo("Pacman", "Máquinas", 4.5, 3)
+jogo3 = Jogo("Sinuca", "Mesa", 18.0, 4)
 
 plataforma = Plataforma()
 plataforma.adicionar_jogo(jogo1)
