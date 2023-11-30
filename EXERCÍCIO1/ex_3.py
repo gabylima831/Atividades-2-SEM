@@ -7,7 +7,7 @@ class Animal:
         self.habitat = habitat
 
     def descricao(self):
-        return f"{self.nome} é um(a) {self.especie} de {self.idade} anos que é {self.dieta}. Habitat: {self.habitat}"
+        return f"{self.nome} é um(a) {self.especie} de {self.idade} anos que é {self.dieta} e seu habitat é a {self.habitat}."
 
 class Zoologico:
     def __init__(self):
@@ -50,9 +50,9 @@ class Zoologico:
 
 zoo = Zoologico()
 
-animal1 = Animal("Leo", "Leão", 5, "Carnívoro", "Savana")
-animal2 = Animal("Polly", "Papagaio", 3, "Onívoro", "Floresta Tropical")
-animal3 = Animal("Rocky", "Rinoceronte", 10, "Herbívoro", "Savana")
+animal1 = Animal("Alex", "Leão", 5, "Carnívoro", "Savana")
+animal2 = Animal("Zé Carioca", "Papagaio", 3, "Onívoro", "Floresta Tropical")
+animal3 = Animal("Melmann", "Girafa", 10, "Herbívoro", "Savana")
 
 zoo.adicionar_animal(animal1)
 zoo.adicionar_animal(animal2)
@@ -67,7 +67,7 @@ zoo.buscar_por_especie("Leão")
 print("\nListando animais no habitat 'Savana':")
 zoo.listar_animais_em_habitat("Savana")
 
-zoo.remover_animal("Polly")
+zoo.remover_animal("Melmann")
 
 print("\nListando todos os animais após a remoção:")
 zoo.listar_animais()
