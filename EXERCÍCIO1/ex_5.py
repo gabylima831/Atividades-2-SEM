@@ -37,9 +37,9 @@ class Turma:
             return None
         return max(self.estudantes, key=lambda estudante: estudante.nota)
 
-estudante1 = Estudante("Claudio", 8, 9, 4)
-estudante2 = Estudante("Rafael", 7, 8, 6)
-estudante3 = Estudante("Robson", 9, 5, 7)
+estudante1 = Estudante("Carlos", 8, 9, 4)
+estudante2 = Estudante("Reginaldo", 7, 8, 6)
+estudante3 = Estudante("Fernando", 9, 5, 7)
 
 turma = Turma()
 turma.adicionar_estudante(estudante1)
